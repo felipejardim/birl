@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class extends Component {
   componentDidMount(){
     axios.get('https://jsonplaceholder.typicode.com/posts')
-         .them(res => {console.log(res)});
+         .then(res => {console.log(res)});
   }
   
   render() {
